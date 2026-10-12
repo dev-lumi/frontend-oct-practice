@@ -115,7 +115,7 @@ export const timingData = [
     { day: "Tuesday", hours: "11 AM - 10 PM" },
     { day: "Wednesday", hours: "10 AM - 09 PM" },
     { day: "Thursday", hours: "10 AM - 10 PM" },
-    { day: "Friday", hours: "Closed" },
+    { day: "Friday", hours: "Closed " },
     { day: "Saturday", hours: "11 AM - 10 PM" },
     { day: "Sunday", hours: "12 AM - 9 PM" }
 ];
