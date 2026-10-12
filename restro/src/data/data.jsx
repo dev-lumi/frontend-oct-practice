@@ -79,7 +79,7 @@ export const featuresData = [
         description: "We source fresh, seasonal ingredients daily to deliver exceptional flavor and quality in every meal."
     },
     {
-        icon: "Heart",
+        icon: "HeartHandshake",
         title: "Warm Hospitality",
         description: "Enjoy attentive service and a welcoming atmosphere that makes every visit comfortable and memorable."
     }
