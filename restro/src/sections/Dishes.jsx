@@ -1,0 +1,52 @@
+import React, { useState } from "react";
+import { dishes } from "../data/data";
+import Animated from "../components/Animated";
+import { motion } from "motion/react";
+
+const Dishes = () => {
+
+    const [rotate, setRotate] = useState({})
+
+  return (
+    <section id="dishes" className="mt-44 px-auto">
+      <div className="text-center mb-16">
+        <Animated delay={0.2}>
+          <p className="uppercase text-orange-500 font-medium mb-3.5">
+            chef's signature selection
+          </p>
+        </Animated>
+        <Animated>
+          <h2 className="md:text-5xl text-4xl max-w-lg mx-auto text-balance">
+            Discover our signature dishes
+          </h2>
+        </Animated>
+      </div>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-9 max-w-5xl mx-auto">
+        {dishes.map((dish, index) => (
+          <Animated
+            key={index}
+            y={80}
+            delay={index * 0.1}
+            className="flex flex-col items-center text-center shrink-0 cursor-pointer"
+            onMouseEnter={()=>setRotate((prev)=>({...prev, [index]: (prev[index] || 0) + 180}))}
+          >
+            <motion.div
+              animate={{ rotate: rotate[index] || 0 }}
+              transition={{ type: "spring", stiffness: 80, damping: 15 }}
+            >
+              <img
+                src={dish.img}
+                alt={dish.title}
+                className="size-30 md:size-35 object-cover"
+              />
+            </motion.div>
+            <h3 className="mt-5">{dish.title}</h3>
+            <p className="mt-2 text-zinc-600">{dish.price}</p>
+          </Animated>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default Dishes;
