@@ -50,6 +50,9 @@ const App = () => {
     <h1 className='text-5xl mb-4'>BlaBla</h1>
     <p className=''>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente maiores saepe facere velit voluptates amet, laudantium doloremque autem, similique, iste accusantium. Sequi rerum, ad velit recusandae perferendis ab, pariatur unde enim ipsam cum animi deleniti, commodi nesciunt error assumenda illum.</p>
     <button>Button</button>
+    <button>Button</button>
+    <button>Button</button>
+    <button>Button</button>
    </div>
    </>
   )
