@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+@layer base{
+
+    h1{
+       @apply bg-amber-200;
+    }
+}
+
+@layer components{
+    .card{
+        background-color: orange;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px;
+    }
+}
