@@ -4,6 +4,7 @@ const App = () => {
   return (
     <div className='card'>
         <h1>bla</h1>
+        <h1>bla</h1>
     </div>
   )
 }
