@@ -8,8 +8,11 @@
   border-radius: 8px;
 
   display: grid;
-  grid-template-columns:100px 200px auto 200px 100px;
-  grid-template-rows:25% 300px auto;
+  grid-template-columns:300px 300px 300px 300px;
+  grid-template-rows:100px 200px 200px ;
+  grid-template-areas: "nav nav nav nav"
+  "main main emt sdbr"
+  "ftr ftr ftr ftr";
 
 }
 
@@ -23,22 +26,31 @@
 }
 
 .item:nth-child(1){
-    background-color: yellow;
-    grid-column: 1/3;
-    grid-row: 1/3;
+    background-color: rgba(128, 0, 128, 0.665);
+    grid-area: nav;
+    /* grid-column: 1/3;
+    grid-row: adipoli/3; */
 }
 .item:nth-child(2){
-    background-color: blue;
-    grid-column: 3/-1;
-    grid-row: 1/3;
+    background-color: rgba(0, 0, 255, 0.461);
+     grid-area: main;
+    /* grid-column: 3/-1;
+    grid-row: 1/3; */
 
 }
 .item:nth-child(3){
-    background-color: orange;
-    grid-column: 1/3;
-    grid-row: -2/-1;
+    background-color: rgba(16, 234, 16, 0.836);
+     grid-area: emt;
+    /* grid-column: 1/3;
+    grid-row: -2/-1; */
 }
 .item:nth-child(4){
-    background-color: green;
-    grid-column: 3/-1;
+    background-color: rgba(255, 255, 0, 0.617);
+    /* grid-column: 3/-1; */
+     grid-area: sdbr;
+}
+.item:nth-child(5){
+    background-color: rgba(165, 42, 42, 0.558);
+    /* grid-column: 3/-1; */
+     grid-area: ftr;
 }
