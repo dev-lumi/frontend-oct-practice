@@ -2,7 +2,9 @@
   "name": "frontend",
   "version": "1.0.0",
   "private": "true",
-  "workspaces": ["*"],
+  "workspaces": [
+    "/*"
+  ],
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -21,4 +23,3 @@
   },
   "homepage": "https://github.com/dev-lumi/frontend-oct-practice#readme"
 }
-
